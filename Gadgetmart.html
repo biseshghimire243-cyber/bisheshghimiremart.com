@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <style type="text/css">
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: red;
+            font-family: calibri;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 600;
+            color: white;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            display: inline-block;
+        }
+        ul li a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        .buttons {
+            display: flex;
+            gap: 15px; /* space between buttons */
+        }
+        .buttons button {
+            background-color: black;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            border: none;
+        }
+        .buttons button a {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        /* Login button fixed in corner */
+        .login-corner {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            background-color: darkblue;
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+        .login-corner a {
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+.corner-image {
+    position: fixed;   
+    right: 15px;       
+    width: 500px;      
+    height: auto;
+    border-radius: 10px; 
+    bottom: 300px;
+}
+
+</style>
+</head>
+<img src="./assignment/headphone_1-removebg-preview (1).png" alt="Headphones" class="corner-image">
+<body>
+    <div class="navbar">
+        <h2 class="logo">BISHESH GHIMIRE GADGETS MART</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="buttons">
+            <button><a href="#">Sign in</a></button>
+            <button><a href="#">Sign up</a></button>
+        </div>
+    </div>
+    <font color="Black" size="5">
+    <h2 align="center">#Welcome to the gadget mart
+    </font><br>
+    <font size="4">
+    Hello and Welcome!
+I’m Bishesh Ghimire, a web developer and designer dedicated to creating modern, responsive, and user-friendly websites. Here, you can explore my portfolio, learn about my skills, and connect with me for exciting projects.<br>
+</font><br>
+<section id="gadgets-boxes" style="padding: 10px; font-family: Agency FB, sans-serif; background-color: rgb(96, 96, 168); text-align: center;">
+    <h2 style="color: #333; margin-bottom: 40px;">Top Gadgets & Ratings</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        
+        <!-- Box 1 -->
+        <div style="background-color: white; padding: 5px; width: 200px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <h3>1. Smartphone</h3>
+            <img src="./assignment/phone.jfif" alt="Smartphone" style="width: 100px; height: auto; margin: 10px 0;">
+            <p>Rating: ★★★★☆</p>
+        </div>
+
+        <!-- Box 2 -->
+        <div style="background-color: white; padding: 1%; width: 200px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <h3>2. Laptop And Pcs</h3>
+            <img src="./assignment/laptop.jpg" alt="Laptop" style="width: 100px; height: auto; margin: 10px 0;">
+            <p>Rating: ★★★★★</p>
+        </div>
+
+        <!-- Box 3 -->
+        <div style="background-color: white; padding: 5px; width: 200px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <h3>3. Smartwatch And smartware</h3>
+            <img src="./assignment/smart watch.jpg" alt="Smartwatch" style="width: 100px; height: auto; margin: 10px 0;">
+            <p>Rating: ★★★★☆</p>
+        </div>
+
+        <!-- Box 4 -->
+        <div style="background-color: white; padding: 1%; width: 200px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <h3>4. Smart Home Device</h3>
+            <img src="./assignment/smarthome device.webp" alt="Smart Home Device" style="width: 100px; height: auto; margin: 10px 0;">
+            <p>Rating: ★★★★☆</p>
+        </div>
+
+        <!-- Box 5 -->
+        <div style="background-color: white; padding: 1%; width: 200px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <h3>4. Home appliance</h3>
+            <img src="./assignment/home appliance.webp" alt="Smart Home Device" style="width: 100px; height: auto; margin: 10px 0;">
+            <p>Rating: ★★★★☆</p>
+        </div>
+
+        <!-- Box 6 -->
+        <div style="background-color: white; padding: 1%; width: 200px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: center;">
+            <h3>4. College tech</h3>
+            <img src="./assignment/college tech.jpg" alt="Smart Home Device" style="width: 100px; height: auto; margin: 10px 0;">
+            <p>Rating: ★★★★☆</p>
+        </div>
+
+
+
+    </div>
+</section>
+<!-- ✅ Bot popup (paste inside <body>) -->
+<div id="bot-popup" aria-live="polite">
+  <div class="bot-card">
+    <div class="bot-avatar" aria-hidden="true">
+      <!-- Replace src with your own bot image if you have one -->
+      <img src="bot.png" alt="" onerror="this.replaceWith(document.createTextNode('🤖'));">
+    </div>
+
+    <div class="cloud-bubble">
+      <button class="close" aria-label="Close popup" title="Close">×</button>
+      <div class="bubble-text">
+        <strong>Hi! I’m your AI helper.</strong><br>
+        Need anything? Click the chat or menu to start!
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Container (hidden by default) */
+  #bot-popup {
+    position: fixed;
+    inset: auto 16px 16px auto; /* bottom-right */
+    z-index: 9999;
+    pointer-events: none; /* only bubble/card catch clicks */
+    opacity: 0;
+    transform: translateY(12px) scale(.98);
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  #bot-popup.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* Card layout */
+  .bot-card {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    pointer-events: auto;
+  }
+
+  /* Avatar */
+  .bot-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 2px solid #e6e6e6;
+  }
+  .bot-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Cloud-shaped speech bubble */
+  .cloud-bubble {
+    position: relative;
+    background: #ffffff;
+    padding: 14px 44px 14px 16px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+    max-width: 260px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #222;
+  }
+  /* Make it look like a cloud with extra circles */
+  .cloud-bubble::before,
+  .cloud-bubble::after {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  }
+  /* big puff */
+  .cloud-bubble::before {
+    width: 22px; height: 22px;
+    left: -8px; bottom: 14px;
+  }
+  /* small puff (tail) */
+  .cloud-bubble::after {
+    width: 14px; height: 14px;
+    left: -16px; bottom: 6px;
+  }
+
+  .bubble-text { line-height: 1.35; font-size: 14px; }
+
+  /* Close button */
+  .cloud-bubble .close {
+    position: absolute;
+    top: 6px; right: 8px;
+    width: 26px; height: 26px;
+    border: none;
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #333;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .cloud-bubble .close:hover { background: #e6e6e6; }
+  .cloud-bubble .close:active { transform: scale(.96); }
+
+  /* Optional: gentle entrance wiggle for the bubble only */
+  @keyframes pop {
+    0% { transform: scale(.96); }
+    60% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  #bot-popup.show .cloud-bubble { animation: pop .28s ease-out; }
+</style>
+
+<script>
+  // Show on load, hide after a while, and allow manual close
+  (function () {
+    const el = document.getElementById('bot-popup');
+    const closeBtn = el.querySelector('.close');
+
+    // show after DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', show);
+    } else {
+      show();
+    }
+
+    function show() {
+      el.classList.add('show');
+      // auto-hide after 8 seconds (change as you like)
+      el._timer = setTimeout(hide, 8000);
+    }
+
+    function hide() {
+      el.classList.remove('show');
+      if (el._timer) clearTimeout(el._timer);
+    }
+
+    closeBtn.addEventListener('click', hide);
+  })();
+</script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #ff6a00, #ff3c82);
+  background-size: 800% 800%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
+<style>
+.box {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+</style>
+<button id="topBtn">↑</button>
+
+<style>
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none;
+}
+#topBtn:hover {
+  background: #6a11cb;
+}
+</style>
+
+<script>
+let topBtn = document.getElementById("topBtn");
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 100) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+topBtn.onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+</script>
+
+</section>
+
+<!-- Language Section -->
+<section style="padding: 40px; background-color: #f9f9f9; font-family: 'Agency FB', sans-serif;">
+  <h2 style="color: #333;">Languages I Use</h2>
+  <p>I am proficient in HTML, CSS, JavaScript, Python, and other modern programming languages. These languages help me build interactive and dynamic websites efficiently.</p>
+</section>
+
+<!-- Theoretical Details Section -->
+<section style="padding: 40px; background-color: #ffffff; font-family: 'Agency FB', sans-serif;">
+  <h2 style="color: #333;">Theoretical Knowledge</h2>
+  <p>Understanding the theoretical aspects of computer science, such as algorithms, data structures, and networking concepts, allows me to design better applications and solve complex problems effectively.</p>
+</section>
+
+<!-- Paragraph / About Section -->
+<section style="padding: 40px; background-color: #f9f9f9; font-family: 'Agency FB', sans-serif;">
+  <h2 style="color: #333;">About Gadgets & Technology</h2>
+  <p>Technology and gadgets have revolutionized the way we live and work. Keeping updated with the latest devices and software helps us stay productive, entertained, and connected in a fast-paced digital world.</p>
+</section>
+<!-- Contact Us Section -->
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to get in touch? Fill out the form below or email us at <a href="Bisheshgadgetmart@gmail.com">Bisheshgadgetmart@gmail.com</a>.</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<style>
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+  backdrop-filter: blur(10px); /* blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  text-align:left;
+  color: #fff;
+  font-family: 'Agency FB', sans-serif;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'Agency FB', sans-serif;
+}
+
+.contact-section form button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2575fc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Agency FB', sans-serif;
+}
+
+.contact-section form button:hover {
+  background-color: #6a11cb;
+}
+</style>
+<!-- Delivery Options Section -->
+<section class="delivery-section">
+  <h2>Our Delivery Options</h2>
+  <div class="delivery-container">
+    <!-- Option 1 -->
+    <div class="delivery-card">
+      <div class="circle">🚚</div>
+      <h3>Standard Shipping</h3>
+      <p>Delivered within 5-7 business days. Cost-effective and reliable for everyday items.</p>
+    </div>
+    <!-- Option 2 -->
+    <div class="delivery-card">
+      <div class="circle">⚡</div>
+      <h3>Express Shipping</h3>
+      <p>Fast delivery within 1-2 business days. Ideal for urgent orders and special occasions.</p>
+    </div>
+    <!-- Option 3 -->
+    <div class="delivery-card">
+      <div class="circle">✈️</div>
+      <h3>International Shipping</h3>
+      <p>Ship your orders globally with tracking. Delivery time varies by country.</p>
+    </div>
+    <!-- Option 4 -->
+    <div class="delivery-card">
+      <div class="circle">🏍️</div>
+      <h3>Local Courier</h3>
+      <p>Quick local delivery within your city. Perfect for same-day or next-day delivery.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Delivery Section */
+.delivery-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Agency FB', sans-serif;
+}
+
+.delivery-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Container for all cards */
+.delivery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual card */
+.delivery-card {
+  background: #fff;
+  padding: 30px 20px;
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.delivery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Circle icon */
+.circle {
+  width: 70px;
+  height: 70px;
+  background: #2575fc;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+/* Card headings and text */
+.delivery-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.delivery-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+<!-- Customer Reviews Section -->
+<section class="reviews-section">
+  <h2>What Our Customers Say</h2>
+  <div class="reviews-container">
+    <!-- Review 1 -->
+    <div class="review-card">
+      <img src="./assignment/pp1.webp" alt="Customer 1">
+      <h4>John Doe</h4>
+      <p>"Amazing service! The delivery was super fast and the product quality exceeded my expectations."</p>
+    </div>
+    <!-- Review 2 -->
+    <div class="review-card">
+      <img src="./assignment/pp2.webp" alt="Customer 2">
+      <h4>Mary Smith</h4>
+      <p>"I love this website! The UI is clean and finding gadgets was very easy."</p>
+    </div>
+    <!-- Review 3 -->
+    <div class="review-card">
+      <img src="./assignment/pp4.webp" alt="Customer 3">
+      <h4>James Lee</h4>
+      <p>"Customer support was very helpful and responsive. Highly recommended!"</p>
+    </div>
+    <!-- Review 4 -->
+    <div class="review-card">
+      <img src="./assignment/pp3.webp" alt="Customer 4">
+      <h4>Emma Brown</h4>
+      <p>"Great product selection and smooth checkout process."</p>
+    </div>
+    <!-- Review 5 -->
+    <div class="review-card">
+      <img src="./assignment/pp5.jpg" alt="Customer 5">
+      <h4>Michael Johnson</h4>
+      <p>"Fast shipping and excellent packaging. Will order again."</p>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Reviews Section */
+.reviews-section {
+  padding: 60px 20px;
+  background-color: #f0f4f8;
+  font-family: 'Agency FB', sans-serif;
+}
+
+.reviews-section h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Container holding all reviews */
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px; /* keeps it on left side */
+}
+
+/* Individual review card */
+.review-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Profile image */
+.review-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Name */
+.review-card h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #2575fc;
+}
+
+/* Review text */
+.review-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+</style>
+<div style="text-align: left; margin-top: 15px;">
+    <button class="more-btn" onclick="showMoreReviews()">More Reviews</button>
+  </div>
+</section>
+
+<style>
+/* Button style */
+.more-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Agency FB', sans-serif;
+  transition: background 0.3s;
+}
+
+.more-btn:hover {
+  background-color: #6a11cb;
+}
+</style>
+
+<script>
+function showMoreReviews() {
+  alert("Load more reviews here!");
+  // Replace this with actual dynamic loading if needed
+}
+</script>
+
+<!-- Owner's Message Section -->
+<section id="owner-message" style="background-color: #f9f9f9; padding: 60px 20px; text-align: center;">
+  <h2 style="font-size: 2em; margin-bottom: 30px;">What Our Owner Says</h2>
+
+  <div style="display: inline-block; max-width: 450px; background: #fff; padding: 40px; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.1);">
+    <!-- Owner Image -->
+    <img src="./bishesh ghimire photo.jpg" alt="Owner Photo" style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;">
+
+    <!-- Owner Name -->
+    <h3 style="margin: 0; font-size: 1.3em; color: #333;">Bishesh Ghimire</h3>
+    <p style="margin: 5px 0 20px 0; font-style: italic; color: #777;">Founder & Owner</p>
+
+    <!-- Owner Message -->
+    <p style="color: #555; font-size: 1em; line-height: 1.6;">
+      "At our company, we are committed to delivering the highest quality products and ensuring every customer is satisfied. Your trust means everything to us, and I personally guarantee that we always put our customers first." THANKYOU
+    </p>
+  </div>
+</section>
+
+
+</body>
+</html>
